@@ -1,0 +1,115 @@
+.header {
+  // height: 70px;
+  // width: 100%;
+  // display: flex;
+  // justify-content: space-between;
+  // margin-bottom: 25px;
+  // margin: 0;
+
+  .options {
+    text-align: center;
+
+  }
+  .navList {
+  }
+  ul.sideNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  ul.sideNav a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  ul.sideNav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  ul.sideNav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  .logo-container {
+    height: 50px;
+    // width: 100%;
+    padding: 15px;
+
+    .logo {
+      cursor: pointer;
+      float: left;
+    }
+
+    .signout-icon {
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+
+  // .options {
+  //   height: 50px;
+  //   width: 100%;
+  //   padding: 30px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: flex-end;
+
+  //   .option {
+  //     padding: 10px 15px;
+  //     cursor: pointer;
+  //   }
+  // }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+
+    ul.sideNav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    ul.sideNav a {
+      float: left;
+      padding: 15px;
+    }
+
+  }
+
+  // div.homepage {
+  //   margin-left: 0;
+  // }
+
+  .options {
+    text-align: center;
+  }
+  .navList {
+    display: inline-block;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+
+    ul.sideNav a {
+      text-align: center;
+      float: none;
+    }
+    .navList {
+      display: inline-block;
+    }
+  }
+}
