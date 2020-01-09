@@ -175,3 +175,25 @@ padding: 5px;
 }
 
 
+
+@media screen and (max-width: 900px) {
+    .center {
+        padding: 5px;
+    }
+}
+    
+
+    
+@media screen and (max-width: 500px) {
+    .center {
+        padding: 5px;
+        // width: 90%;
+        margin: auto;
+
+        .card {
+            width: auto;
+        }
+    }
+    
+    
+}
