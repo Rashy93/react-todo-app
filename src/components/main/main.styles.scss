@@ -1,7 +1,12 @@
 .main {
-    background: #FCEEB5;
+    background: white;
+    background-image: url(../../assets/geo3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     font-family: Abel, Arial, Verdana, sans-serif;
-    border-style: dashed;
+    // border-style: dashed;
     height: 100%;
     width: 100%;
 

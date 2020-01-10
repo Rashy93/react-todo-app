@@ -11,7 +11,7 @@ padding: 5px;
 }
 
 .card {
-  width: 450px;
+  width: 350px;
   height: 250px;
   background-color: #fff;
   background: linear-gradient(#f8f8f8, #fff);
@@ -23,12 +23,12 @@ padding: 5px;
 }
 
 .card h1 {
-  text-align: center;
+  text-align: left;
 }
 
 .card .additional {
   position: absolute;
-  width: 150px;
+  width: 65px;
   height: 100%;
   background: linear-gradient(#dE685E, #EE786E);
   transition: width 0.4s;
@@ -47,7 +47,7 @@ padding: 5px;
 }
 
 .card .additional .user-card {
-  width: 150px;
+  width: 65px;
   height: 100%;
   position: relative;
   float: left;
@@ -85,16 +85,18 @@ padding: 5px;
 }
 
 .card .additional .more-info {
-  width: 300px;
-  float: left;
+  width: 70%;
+  float: right;
   position: absolute;
-  left: 150px;
+  left: 70px;
   height: 100%;
+  overflow: hidden;
 }
 
 .card .additional .more-info h1 {
   color: #fff;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .card.green .additional .more-info h1 {
@@ -102,9 +104,10 @@ padding: 5px;
 }
 
 .card .additional .coords {
-  margin: 0 1rem;
+  margin: 1rem 3rem;
   color: #fff;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .card.green .additional .coords {
@@ -115,7 +118,7 @@ padding: 5px;
   float: right;
 }
 
-.card .additional .stats {
+.card .additional .icon {
   font-size: 2rem;
   display: flex;
   position: absolute;
@@ -124,39 +127,41 @@ padding: 5px;
   right: 1rem;
   top: auto;
   color: #fff;
+  font-weight: bold;
 }
 
-.card.green .additional .stats {
+.card.green .additional .icon {
   color: #325C46;
 }
 
-.card .additional .stats > div {
+.card .additional .icon > div {
   flex: 1;
   text-align: center;
 }
 
-.card .additional .stats i {
+.card .additional .icon i {
   display: block;
 }
 
-.card .additional .stats div.title {
+.card .additional .icon div.title {
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
-.card .additional .stats div.value {
+.card .additional .icon div.value {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5rem;
 }
 
-.card .additional .stats div.value.infinity {
+.card .additional .icon div.value.infinity {
   font-size: 2.5rem;
 }
 
 .card .general {
-  width: 300px;
+  width: 80%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -176,7 +181,7 @@ padding: 5px;
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .center {
         padding: 5px;
     }

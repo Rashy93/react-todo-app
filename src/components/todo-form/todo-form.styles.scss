@@ -1,11 +1,14 @@
 .todo {
     display: inline-block;
     background-color: white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 20px 40px;
-    position: relative;
-    width: 100%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    font-size: 20px;
+    width: auto;
+    height: auto;
     .title {
        margin: 10px 0;
     }

@@ -41,34 +41,37 @@ class TodoForm extends Component {
 
     render() {
         return(
-            <div className='todo'>
-                <h2>ToDo Form</h2>
-                <span>Create a ToDo</span>
+            <div className="sticky">
+                <div className='todo'>
+                    <h2>ToDo Form</h2>
+                    <span>Create a ToDo</span>
 
-                <form onSubmit={this.handleSubmit}>
-                    <FormInput 
-                        name='title'
-                        type='title' 
-                        handleChange={this.handleChange} 
-                        value={this.state.title} 
-                        label='Title'
-                        required 
-                    />
-                    <TextArea 
-                        name='text' 
-                        type='text'
-                        value={this.state.text} 
-                        handleChange={this.handleChange} 
-                        label='Text'
-                        rows="4" 
-                        cols="50"
-                        required 
-                    />
-                    <div className='button'>
-                        <CustomButton type="submit"> Add Todo</CustomButton>
-                    </div>
-                </form>
+                    <form onSubmit={this.handleSubmit}>
+                        <FormInput 
+                            name='title'
+                            type='title' 
+                            handleChange={this.handleChange} 
+                            value={this.state.title} 
+                            label='Title'
+                            required 
+                        />
+                        <TextArea 
+                            name='text' 
+                            type='text'
+                            value={this.state.text} 
+                            handleChange={this.handleChange} 
+                            label='Text'
+                            rows="4" 
+                            cols="50"
+                            required 
+                        />
+                        <div className='button'>
+                            <CustomButton type="submit"> Add Todo</CustomButton>
+                        </div>
+                    </form>
+                </div>
             </div>
+            
         )
     }
 }
