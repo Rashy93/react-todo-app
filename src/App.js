@@ -48,6 +48,8 @@ class App extends React.Component {
       this.unsubscribeFromAuth();
   }
 
+ 
+
   render() {
     return !this.state.currentUser ? (
       <Switch>
@@ -56,10 +58,10 @@ class App extends React.Component {
     </Switch>
     ): (
       <div>
-      <Header currentUser={this.state.currentUser} />
+      <Header />
           <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Redirect to='/'/>
+            <Route exact path='/react-todo-app' component={HomePage} />
+            <Redirect to='/react-todo-app'/>
           </Switch>
       </div>
     );

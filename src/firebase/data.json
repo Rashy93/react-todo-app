@@ -1,0 +1,11 @@
+      // const { title, text, date } = this.state;
+    
+      // try {
+      //     await auth.signInWithTitleAndText(title, text);
+      //     this.setState({ title: '', text: '' });
+    
+      // } catch (error) {
+      //     console.log(error)
+      // }
+    
+      // this.setState({ title: '', text: '' })

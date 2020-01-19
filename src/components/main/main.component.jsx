@@ -2,12 +2,12 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 // import { auth } from '../../firebase/firebase.utils';
-import Cards from '../cards/cards.component'
+import CardsList from '../cards-list/cards-list.component'
 import './main.styles.scss';
 
-const Main = () => (
+const Main = ({list}) => (
         <div className="main">
-            <Cards />
+            <CardsList list={list} />
         </div>
 )
 

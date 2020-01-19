@@ -21,6 +21,7 @@ const config = {
 
     if(!snapShot.exists) {
         const { displayName, email } = userAuth;
+        const {todos} = []
         const createdAt = new Date();
     
 
@@ -28,6 +29,7 @@ const config = {
         await userRef.set({
             displayName, 
             email,
+            todos,
             createdAt,
             ...additionalData
         })

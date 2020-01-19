@@ -10,4 +10,12 @@
     height: 100%;
     width: 100%;
 
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 760px) { 
+    .main {
+    border-radius: 0px;
+    }
 }

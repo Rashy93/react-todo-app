@@ -6,9 +6,7 @@
 
 
 
-.center {
-padding: 5px;
-}
+
 
 .card {
   width: 350px;
@@ -30,7 +28,7 @@ padding: 5px;
   position: absolute;
   width: 65px;
   height: 100%;
-  background: linear-gradient(#dE685E, #EE786E);
+  background: linear-gradient(#8e5da4, #889dd0);
   transition: width 0.4s;
   overflow: hidden;
   z-index: 2;
@@ -177,28 +175,19 @@ padding: 5px;
   bottom: 1rem;
   right: 1rem;
   font-size: 0.9em;
+  font-style: italic;
 }
 
 
 
 @media screen and (max-width: 1000px) {
-    .center {
-        padding: 5px;
-    }
+
 }
     
 
     
 @media screen and (max-width: 500px) {
-    .center {
-        padding: 5px;
-        // width: 90%;
-        margin: auto;
-
-        .card {
-            width: auto;
-        }
+    .card {
+        width: auto;
     }
-    
-    
 }
