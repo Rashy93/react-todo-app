@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-todo-app/static/css/main.90be4b5e.chunk.css",
-    "main.js": "/react-todo-app/static/js/main.8219dbac.chunk.js",
-    "main.js.map": "/react-todo-app/static/js/main.8219dbac.chunk.js.map",
+    "main.css": "/react-todo-app/static/css/main.6187dd29.chunk.css",
+    "main.js": "/react-todo-app/static/js/main.cf782051.chunk.js",
+    "main.js.map": "/react-todo-app/static/js/main.cf782051.chunk.js.map",
     "runtime-main.js": "/react-todo-app/static/js/runtime-main.b08789dc.js",
     "runtime-main.js.map": "/react-todo-app/static/js/runtime-main.b08789dc.js.map",
-    "static/js/2.dba30b5b.chunk.js": "/react-todo-app/static/js/2.dba30b5b.chunk.js",
-    "static/js/2.dba30b5b.chunk.js.map": "/react-todo-app/static/js/2.dba30b5b.chunk.js.map",
+    "static/js/2.28bdad1c.chunk.js": "/react-todo-app/static/js/2.28bdad1c.chunk.js",
+    "static/js/2.28bdad1c.chunk.js.map": "/react-todo-app/static/js/2.28bdad1c.chunk.js.map",
     "index.html": "/react-todo-app/index.html",
-    "precache-manifest.56b148b4980305428b333a05845d9315.js": "/react-todo-app/precache-manifest.56b148b4980305428b333a05845d9315.js",
+    "precache-manifest.e94a28cfdd151fe8ceded8c19543737b.js": "/react-todo-app/precache-manifest.e94a28cfdd151fe8ceded8c19543737b.js",
     "service-worker.js": "/react-todo-app/service-worker.js",
-    "static/css/main.90be4b5e.chunk.css.map": "/react-todo-app/static/css/main.90be4b5e.chunk.css.map",
-    "static/js/2.dba30b5b.chunk.js.LICENSE": "/react-todo-app/static/js/2.dba30b5b.chunk.js.LICENSE",
+    "static/css/main.6187dd29.chunk.css.map": "/react-todo-app/static/css/main.6187dd29.chunk.css.map",
+    "static/js/2.28bdad1c.chunk.js.LICENSE": "/react-todo-app/static/js/2.28bdad1c.chunk.js.LICENSE",
     "static/media/edit.785c7478.svg": "/react-todo-app/static/media/edit.785c7478.svg",
     "static/media/files-and-folders.ad42e98b.svg": "/react-todo-app/static/media/files-and-folders.ad42e98b.svg",
     "static/media/main.styles.scss": "/react-todo-app/static/media/geo3.ab281892.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b08789dc.js",
-    "static/js/2.dba30b5b.chunk.js",
-    "static/css/main.90be4b5e.chunk.css",
-    "static/js/main.8219dbac.chunk.js"
+    "static/js/2.28bdad1c.chunk.js",
+    "static/css/main.6187dd29.chunk.css",
+    "static/js/main.cf782051.chunk.js"
   ]
 }
