@@ -11,15 +11,12 @@ import './todos.styles.scss'
 
 
 class Todos extends Component {
-    constructor() {
-        super();
-    
-        this.state = {
-          currentUser: {},
-          list: []
+      
+      state = {
+          currentUser: {}
         };
-      }
-      componentDidMount(list) {
+
+      componentDidMount() {
         this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
           if (userAuth) {
             const userRef = await createUserProfileDocument(userAuth);
@@ -28,7 +25,6 @@ class Todos extends Component {
               this.setState({
                 currentUser: {
                   id: snapShot.id,
-                  list: ['hello'],
                   ...snapShot.data()
                 }
               }
@@ -39,14 +35,23 @@ class Todos extends Component {
             });
     
           } else this.setState({currentUser: userAuth})
-    
+          
         });
      
       }
+      
+      handleComplete = () => {
+        this.setState(state => ({
+          isCompleted: !this.state.isCompleted
+        }))
+        console.log(this.state.isCompleted)
+
+      };
     
     render() {
         return (
-            <div className="card">
+          <li {...this.state.isCompleted ? console.log('card-hide') : console.log('card-show')}>
+            <div className="card" id={this.props.index}>
                 <div className="additional">
                 <div className="user-card">
             </div>
@@ -59,7 +64,7 @@ class Todos extends Component {
                 <div className="coords">
                 <span>Completed?</span>
                 <span>
-                <input type="checkbox" id="cbx" />
+                <input type="checkbox" id="cbx"  onClick={() => this.handleComplete()}/>
                 <label htmlFor="cbx" className="toggle"><span ></span></label>
                 </span>
                 
@@ -87,6 +92,7 @@ class Todos extends Component {
             <span className="more">By {this.state.currentUser.displayName}</span>
             </div>
         </div>
+        </li>
         
         )
     }

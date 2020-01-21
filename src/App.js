@@ -48,8 +48,6 @@ class App extends React.Component {
       this.unsubscribeFromAuth();
   }
 
- 
-
   render() {
     return !this.state.currentUser ? (
       <Switch>

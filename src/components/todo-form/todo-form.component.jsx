@@ -18,14 +18,14 @@ class TodoForm extends Component {
          title: '',
          text: '',
          date: new Date().toLocaleDateString(),
-         todos: []
+         isCompleted: false
         }
  }
 
-     handleSubmit = async event => {
+handleSubmit = async event => {
         event.preventDefault();
         const {todo} = this.state;
-
+        console.log(todo)
         try {
             const { list } = await auth.createTodo(
                 todo
@@ -33,38 +33,29 @@ class TodoForm extends Component {
 
            await createUserProfileDocument(list, { todo });
            this.setState({
-            todos: ''
+            todo: { 
+                title: '',
+                text: '',
+                date: new Date().toLocaleDateString(),
+                isCompleted: false
+               }
            })
+
 
         } catch (error) {
             console.error(error);
         }
-    };
-//  componentDidMount() {
-//     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-//       if (userAuth) {
-//         const userRef = await createUserProfileDocument(userAuth);
 
-//         userRef.onSnapshot(snapShot => {
-//           this.setState({
-//             currentUser: {
-//               id: snapShot.id,
-//               ...snapShot.data()
-//             }
-//           }
-//           , () => {
-//             console.log(this.state)
-//           }
-//           );
-//         });
-        
-//       } else this.setState({currentUser: userAuth})
+};
 
-//     }); 
-//   }
+handleChange = event => {
+    const { list, todo } = event.target;
+
+    this.setState({[todo]: list});
+};
+
     render() { 
         const {todo} = this.state;
-
         return (
             <div className="sticky">
                 <div className='todo'>

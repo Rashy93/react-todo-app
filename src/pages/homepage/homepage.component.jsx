@@ -18,7 +18,7 @@ class HomePage extends Component {
     this.setState({list: newList})
 
   }
-  componentDidMount() {
+  componentDidMount(todo) {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
@@ -26,13 +26,15 @@ class HomePage extends Component {
           this.setState({
             currentUser: {
               id: snapShot.id,
-              todos: snapShot.todos,
+              todos: this.todo,
               ...snapShot.data()
             }
           }
-          // , () => {
+          , () => {
           //   console.log(this.state.currentUser)
-          // }
+          console.log(this.state.list)
+
+          }
           );
         });
 

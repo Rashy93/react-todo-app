@@ -1,4 +1,5 @@
-import firebase from 'firebase/app';    
+import firebase from 'firebase/app'; 
+
 import 'firebase/firestore';
 import 'firebase/auth';
 
@@ -12,7 +13,8 @@ const config = {
     appId: "1:740799789249:web:7989adeafaddea9871bc40"
   };
 
-  export const createUserProfileDocument = async (userAuth, additionalData) => {
+
+  export const createUserProfileDocument = async (userAuth, additionalData, todoData) => {
     if (!userAuth) return;
 
     const userRef = firestore.doc(`user/${userAuth.uid}`);

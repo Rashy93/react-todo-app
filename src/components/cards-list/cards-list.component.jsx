@@ -11,7 +11,7 @@ const CardList = ({list})=> {
     return (
       <div className="center">
       <ul>
-      {list.map(( todo, index, currentUser)=><Todos key={index} title={todo.title} text={todo.text} date={todo.date} currentUser={currentUser} />)}
+      {list.map(( todo, index, currentUser)=><Todos key={index} title={todo.title} text={todo.text} date={todo.date} currentUser={currentUser} isCompleted={todo.isCompleted} />)}
       </ul>
 
       </div>
